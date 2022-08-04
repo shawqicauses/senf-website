@@ -1,4 +1,8 @@
-import { ExternalLinkIcon, MailIcon } from "@heroicons/react/outline"
+import {
+  DocumentDownloadIcon,
+  ExternalLinkIcon,
+  MailIcon
+} from "@heroicons/react/outline"
 import { motion } from "framer-motion"
 import { classes } from "../../lib/utils"
 
@@ -116,7 +120,7 @@ export default function Header() {
               "hover:-translate-y-1 focus:translate-y-0.5 focus:ring-red-500 md:text-lg",
               "focus:translate-y-0 focus:ring-offset-slate-900 sm:focus:translate-y-0.5"
             )}>
-            <MailIcon
+            <DocumentDownloadIcon
               strokeWidth={1.5}
               className={classes(
                 "relative h-6 w-6",

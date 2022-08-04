@@ -158,7 +158,7 @@ export default function Services() {
                   <h3
                     className={classes(
                       "text-lg font-semi-bold leading-none",
-                      "text-righ tracking-tight text-white",
+                      "text-right tracking-tight text-white",
                       "mb-4 mt-auto max-w-xs md:text-xl"
                     )}>
                     {item.title}
@@ -167,7 +167,7 @@ export default function Services() {
                 <dd
                   className={classes(
                     "text-sm font-normal leading-relaxed",
-                    "text-righ text-slate-400 md:text-base"
+                    "text-right text-slate-400 md:text-base"
                   )}>
                   {item.description}
                 </dd>

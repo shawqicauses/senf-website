@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 import { Navbar } from "../components/components"
-import { Header, Hiring, Services } from "../containers/containers"
+import { Header, About, Hiring, Services } from "../containers/containers"
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Services />
+      <About />
       <Hiring />
     </Fragment>
   )
