@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <About />
       <Services />
+      <Services />
       <Hiring />
     </Fragment>
   )
