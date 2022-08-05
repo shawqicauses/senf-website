@@ -1,46 +1,9 @@
 import { MailIcon } from "@heroicons/react/outline"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { classes } from "../../lib/utils"
+import { classes, variants } from "../../lib/utils"
 
 export default function About() {
-  const variants = {
-    container: {
-      hidden: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: -1
-        }
-      },
-      visible: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: 1
-        }
-      }
-    },
-    item: {
-      hidden: {
-        y: 20,
-        opacity: 0,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      },
-      visible: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      }
-    }
-  }
-
   return (
     <section
       id="تعرف-علينا"
@@ -100,7 +63,6 @@ export default function About() {
             className={classes(
               "text-base font-normal leading-relaxed",
               "text-justify text-slate-400 md:text-lg"
-              "text-right text-slate-400 md:text-lg"
             )}>
             تسعى شركة سنف للدعاية والإعلان دائما لتحقيق سمعـة طيبـة وإرسـاء
             دعائم فكر وإبـداع من نـوع خـاص فنحن نعدكم بالدقة في الأداء والسرعة

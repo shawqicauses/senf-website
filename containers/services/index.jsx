@@ -1,6 +1,6 @@
 import { HeartIcon } from "@heroicons/react/outline"
 import { motion } from "framer-motion"
-import { classes } from "../../lib/utils"
+import { classes, variants } from "../../lib/utils"
 
 export default function Services() {
   const services = [
@@ -31,49 +31,12 @@ export default function Services() {
     {
       title: "تصميم الفيديوهات",
       description: [
-        "تقوم سنف باختيار أفضل اللقطات التي تحاكي الفكرة الرئيسية وحذف اللقطات غير المرغوب بها",
+        "تقوم سِنف باختيار أفضل اللقطات التي تحاكي الفكرة الرئيسية وحذف اللقطات غير المرغوب بها",
         "واختيار أفضل المشاهد المناسبة للبداية والنهاية، والعمل على دمج بعض اللقطات",
         "لتصبح فكرة كاملة متناسقة تخلق مرونة للفكرة تماماً كما نعمل على التعديل الصوتي"
       ].join(" ")
     }
   ]
-
-  const variants = {
-    container: {
-      hidden: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: -1
-        }
-      },
-      visible: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: 1
-        }
-      }
-    },
-    item: {
-      hidden: {
-        y: 20,
-        opacity: 0,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      },
-      visible: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      }
-    }
-  }
 
   return (
     <section

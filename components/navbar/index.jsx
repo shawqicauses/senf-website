@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { classes } from "../../lib/utils"
+import { classes, variants } from "../../lib/utils"
 import { Logo } from "../components"
 
 export default function Navbar() {
@@ -7,64 +7,10 @@ export default function Navbar() {
     "الرئيسية",
     "تعرف علينا",
     "خدماتنا",
-    "عملاؤنا",
-    "أعمالنا",
     "التقدم لوظيفة",
+    "عملاؤنا",
     "تواصل معنا"
   ]
-
-  const variants = {
-    container: {
-      hidden: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: -1
-        }
-      },
-      visible: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: 1
-        }
-      }
-    },
-    list: {
-      hidden: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.125,
-          staggerDirection: -1
-        }
-      },
-      visible: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.125,
-          staggerDirection: 1
-        }
-      }
-    },
-    item: {
-      hidden: {
-        y: 20,
-        opacity: 0,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      },
-      visible: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      }
-    }
-  }
 
   return (
     <nav
@@ -108,9 +54,9 @@ export default function Navbar() {
                   className={classes(
                     "flex w-full flex-col items-center justify-center transition",
                     "text-base font-medium leading-none",
-                    "rounded-lg border-2 border-zinc-100 p-5 outline-none",
+                    "rounded-lg border-2 border-slate-100 p-5 outline-none",
                     "no-underline hover:-translate-y-1 hover:text-red-500",
-                    "text-zinc-400 focus:translate-y-0.5 focus:text-white",
+                    "text-slate-400 focus:translate-y-0.5 focus:text-white",
                     "lg:w-max lg:border-0 lg:border-transparent"
                   )}>
                   {item}
