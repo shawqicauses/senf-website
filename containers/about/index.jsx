@@ -100,6 +100,7 @@ export default function About() {
             className={classes(
               "text-base font-normal leading-relaxed",
               "text-justify text-slate-400 md:text-lg"
+              "text-right text-slate-400 md:text-lg"
             )}>
             تسعى شركة سنف للدعاية والإعلان دائما لتحقيق سمعـة طيبـة وإرسـاء
             دعائم فكر وإبـداع من نـوع خـاص فنحن نعدكم بالدقة في الأداء والسرعة
