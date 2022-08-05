@@ -101,7 +101,7 @@ export default function Services() {
             variants={variants.item}
             className={classes(
               "relative text-xl-2 font-semi-bold leading-tight",
-              "max-w-none text-right capitalize tracking-tight",
+              "max-w-none text-justify capitalize tracking-tight",
               "md:text-xl-3 lg:max-w-xl-2 xl:text-xl-4",
               "lg:text-center xl:max-w-xl-3"
             )}>
@@ -119,7 +119,7 @@ export default function Services() {
             variants={variants.item}
             className={classes(
               "max-w-none text-base font-normal leading-normal",
-              "max-w-none text-right tracking-normal text-slate-400",
+              "max-w-none text-justify tracking-normal text-slate-400",
               "md:text-lg lg:max-w-xl-2 lg:text-center xl:text-xl"
             )}>
             خدماتنا الحالية هي مجرد بداية متواضعة لمنصة سِنف التي ستفاجئكم
@@ -158,7 +158,7 @@ export default function Services() {
                   <h3
                     className={classes(
                       "text-lg font-semi-bold leading-none",
-                      "text-right tracking-tight text-white",
+                      "text-justify tracking-tight text-white",
                       "mb-4 mt-auto max-w-xs md:text-xl"
                     )}>
                     {item.title}
@@ -167,7 +167,7 @@ export default function Services() {
                 <dd
                   className={classes(
                     "text-sm font-normal leading-relaxed",
-                    "text-right text-slate-400 md:text-base"
+                    "text-justify text-slate-400 md:text-base"
                   )}>
                   {item.description}
                 </dd>

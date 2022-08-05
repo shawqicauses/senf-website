@@ -68,7 +68,7 @@ export default function About() {
             variants={variants.item}
             className={classes(
               "relative text-xl-2 font-semi-bold leading-tight",
-              "max-w-none text-right capitalize tracking-tight",
+              "max-w-none text-justify capitalize tracking-tight",
               "md:text-xl-3 lg:max-w-xl-2 xl:text-xl-4",
               "mb-4 lg:mb-6 lg:text-center xl:max-w-xl-3"
             )}>
@@ -86,7 +86,7 @@ export default function About() {
             variants={variants.item}
             className={classes(
               "text-base font-normal leading-relaxed",
-              "text-right text-slate-400 md:text-lg",
+              "text-justify text-slate-400 md:text-lg",
               "mt-auto ml-auto mb-4 lg:mb-6"
             )}>
             شركة سنف للدعاية والإعلان فكر جديد ووجهة نظر جديدة في كل ما تحتاجه
@@ -99,7 +99,7 @@ export default function About() {
             variants={variants.item}
             className={classes(
               "text-base font-normal leading-relaxed",
-              "text-right text-slate-400 md:text-lg"
+              "text-justify text-slate-400 md:text-lg"
             )}>
             تسعى شركة سنف للدعاية والإعلان دائما لتحقيق سمعـة طيبـة وإرسـاء
             دعائم فكر وإبـداع من نـوع خـاص فنحن نعدكم بالدقة في الأداء والسرعة
@@ -133,7 +133,7 @@ export default function About() {
             "flex items-center justify-center gap-0"
           )}>
           <Image
-            src="https://images.unsplash.com/photo-1579389083175-247ef703006f"
+            src="https://images.unsplash.com/photo-1638153534717-fb17b6d19040"
             alt="Senf - About Section"
             layout="fill"
             objectFit="cover"

@@ -1,14 +1,14 @@
 import { Fragment } from "react"
 import { Navbar } from "../components/components"
-import { Header, About, Hiring, Services } from "../containers/containers"
+import { Header, About, Services, Hiring } from "../containers/containers"
 
 export default function Home() {
   return (
     <Fragment>
       <Navbar />
       <Header />
-      <Services />
       <About />
+      <Services />
       <Hiring />
     </Fragment>
   )

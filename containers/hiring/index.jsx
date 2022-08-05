@@ -69,15 +69,15 @@ export default function Hiring() {
               "md:text-xl-3 lg:max-w-xl-2 xl:text-xl-4",
               "lg:text-center xl:max-w-xl-3"
             )}>
-            إذا كنت تمتلك مهارة ما وترغب في الانضمام إلي فرق{" "}
+            إذا كنت تمتلك مهارةٌ ما وترغب في الانضمام إلى فريق{" "}
             <span
               className={classes(
                 "bg-gradient-to-br from-red-600 to-red-400",
                 "bg-clip-text text-transparent no-underline"
               )}>
-              سِنف
+              سِنف،{" "}
             </span>{" "}
-            فسارع وقم بتقديم طلب للتوظيف
+            سارع وقم بتقديم طلب للتوظيف
           </motion.h2>
           <motion.p
             variants={variants.item}
@@ -87,8 +87,8 @@ export default function Hiring() {
               "md:text-lg lg:max-w-xl-2 lg:text-center xl:text-xl"
             )}>
             فريق منصة سِنف يكبر بانضمامكم إليه، فإذا كنت تمتلك مهارة ما وتمتلك
-            الشغف الكامل لتأديتها، فأسرع وانضم إلينا عبر هذا النموذج الذي سيوصلك
-            مباشرة معنا
+            الشغف الكامل لتأديتها، انضم إلينا عبر هذا النموذج الذي سيوصلك مباشرة
+            معنا
           </motion.p>
         </div>
         <form
@@ -122,11 +122,11 @@ export default function Hiring() {
                 type="text"
                 id="first-name"
                 name="first-name"
-                placeholder="أدخل اسمك الأول"
+                placeholder="الاسم الأول"
                 className={classes(
                   "placeholder:opacity-1 h-full w-full rounded-lg border-2 border-slate-800",
-                  "bg-slate-800/20 p-4 text-lg font-normal leading-normal text-slate-100",
-                  "outline transition duration-100 ease-linear placeholder:text-slate-600",
+                  "bg-slate-800/40 p-4 text-lg font-normal leading-normal text-slate-100",
+                  "outline transition duration-100 ease-linear placeholder:text-slate-500",
                   "focus:border-2 focus:border-red-500 focus:outline-none focus:ring-0",
                   "outline-none focus:ring-transparent focus:ring-offset-0 focus:ring-offset-transparent"
                 )}
@@ -144,18 +144,18 @@ export default function Hiring() {
                   "text-base font-medium leading-none text-white",
                   "sr-only not-italic no-underline lg:text-xl"
                 )}>
-                اسم العائلة
+                الاسم الثاني
               </motion.label>
               <motion.input
                 variants={variants.item}
                 type="text"
                 id="last-name"
                 name="last-name"
-                placeholder="أدخل اسم عائلتك"
+                placeholder="الاسم الثاني"
                 className={classes(
                   "placeholder:opacity-1 h-full w-full rounded-lg border-2 border-slate-800",
-                  "bg-slate-800/20 p-4 text-lg font-normal leading-normal text-slate-100",
-                  "outline transition duration-100 ease-linear placeholder:text-slate-600",
+                  "bg-slate-800/40 p-4 text-lg font-normal leading-normal text-slate-100",
+                  "outline transition duration-100 ease-linear placeholder:text-slate-500",
                   "focus:border-2 focus:border-red-500 focus:outline-none focus:ring-0",
                   "outline-none focus:ring-transparent focus:ring-offset-0 focus:ring-offset-transparent"
                 )}
@@ -181,11 +181,11 @@ export default function Hiring() {
               type="email"
               id="email"
               name="email"
-              placeholder="أدخل بريدك الإلكتروني"
+              placeholder="البريد الإلكتروني"
               className={classes(
                 "placeholder:opacity-1 h-full w-full rounded-lg border-2 border-slate-800",
-                "bg-slate-800/20 p-4 text-lg font-normal leading-normal text-slate-100",
-                "outline transition duration-100 ease-linear placeholder:text-slate-600",
+                "bg-slate-800/40 p-4 text-lg font-normal leading-normal text-slate-100",
+                "outline transition duration-100 ease-linear placeholder:text-slate-500",
                 "focus:border-2 focus:border-red-500 focus:outline-none focus:ring-0",
                 "outline-none focus:ring-transparent focus:ring-offset-0 focus:ring-offset-transparent"
               )}
@@ -203,18 +203,18 @@ export default function Hiring() {
                 "text-base font-medium leading-none text-white",
                 "sr-only not-italic no-underline lg:text-xl"
               )}>
-              رابط الموقع الشخصي
+              رابط ملف الأعمال
             </motion.label>
             <motion.input
               variants={variants.item}
               type="text"
               id="portfolio"
               name="portfolio"
-              placeholder="أدخل رابط موقعك الشخصي"
+              placeholder="رابط ملف الأعمال"
               className={classes(
                 "placeholder:opacity-1 h-full w-full rounded-lg border-2 border-slate-800",
-                "bg-slate-800/20 p-4 text-lg font-normal leading-normal text-slate-100",
-                "outline transition duration-100 ease-linear placeholder:text-slate-600",
+                "bg-slate-800/40 p-4 text-lg font-normal leading-normal text-slate-100",
+                "outline transition duration-100 ease-linear placeholder:text-slate-500",
                 "focus:border-2 focus:border-red-500 focus:outline-none focus:ring-0",
                 "outline-none focus:ring-transparent focus:ring-offset-0 focus:ring-offset-transparent"
               )}
