@@ -15,6 +15,7 @@ export default function About() {
         variants={variants.container}
         initial={"hidden"}
         whileInView={"visible"}
+        viewport={{ once: true }}
         className={classes(
           "container mx-auto px-5 xl-2:max-w-xl-7",
           "flex flex-col items-start justify-start gap-10",
@@ -30,8 +31,8 @@ export default function About() {
           <motion.h2
             variants={variants.item}
             className={classes(
-              "relative text-xl-2 font-semi-bold leading-tight",
-              "max-w-none text-justify capitalize tracking-tight",
+              "text-xl-2 font-semi-bold leading-tight",
+              "max-w-none text-right tracking-tight",
               "md:text-xl-3 lg:max-w-xl-2 xl:text-xl-4",
               "mb-4 lg:mb-6 lg:text-center xl:max-w-xl-3"
             )}>
@@ -68,25 +69,26 @@ export default function About() {
             دعائم فكر وإبـداع من نـوع خـاص فنحن نعدكم بالدقة في الأداء والسرعة
             في إنهاء الأعمال وتقديم أداء راقي لا نسمـح بتقـديم أقـل منـه
           </motion.p>
-          <motion.button
-            variants={variants.item}
-            className={classes(
-              "mt-8 flex w-full cursor-pointer items-center justify-center sm:w-max lg:mt-12",
-              "gap-3 rounded-lg bg-gradient-to-br from-slate-800/50 to-slate-700/50",
-              "py-5 px-8 text-base font-medium leading-none text-white outline-none",
-              "ring-2 ring-transparent ring-offset-4 ring-offset-slate-50/0 transition-all",
-              "hover:-translate-y-1 focus:translate-y-0.5 focus:ring-slate-800 md:text-lg",
-              "focus:translate-y-0 focus:ring-offset-slate-900 sm:focus:translate-y-0.5"
-            )}>
-            <MailIcon
-              strokeWidth={1.5}
+          <motion.div variants={variants.item}>
+            <button
               className={classes(
-                "relative h-6 w-6",
-                "fill-transparent stroke-current"
-              )}
-            />
-            <span>تواصل معنا</span>
-          </motion.button>
+                "mt-8 flex w-full cursor-pointer items-center justify-center sm:w-max lg:mt-12",
+                "gap-3 rounded-lg bg-gradient-to-br from-slate-800/50 to-slate-700/50",
+                "py-5 px-8 text-base font-medium leading-none text-white outline-none",
+                "ring-2 ring-transparent ring-offset-4 ring-offset-slate-50/0 transition-all",
+                "hover:-translate-y-1 focus:translate-y-0.5 focus:ring-slate-800 md:text-lg",
+                "focus:translate-y-0 focus:ring-offset-slate-900 sm:focus:translate-y-0.5"
+              )}>
+              <MailIcon
+                strokeWidth={1.5}
+                className={classes(
+                  "relative h-6 w-6",
+                  "fill-transparent stroke-current"
+                )}
+              />
+              <span>تواصل معنا</span>
+            </button>
+          </motion.div>
         </div>
         <motion.div
           variants={variants.item}

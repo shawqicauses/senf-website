@@ -1,7 +1,6 @@
 import {
   DocumentDownloadIcon,
-  ExternalLinkIcon,
-  MailIcon
+  ExternalLinkIcon
 } from "@heroicons/react/outline"
 import { motion } from "framer-motion"
 import { classes, variants } from "../../lib/utils"
@@ -18,6 +17,7 @@ export default function Header() {
         variants={variants.container}
         initial={"hidden"}
         whileInView={"visible"}
+        viewport={{ once: true }}
         className={classes(
           "container mx-auto h-full px-5 xl-2:max-w-xl-7",
           "flex flex-col items-start justify-start",

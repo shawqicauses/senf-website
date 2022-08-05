@@ -64,8 +64,8 @@ export default function Hiring() {
           <motion.h2
             variants={variants.item}
             className={classes(
-              "relative text-xl-2 font-semi-bold leading-tight",
-              "max-w-none text-right capitalize tracking-tight",
+              "text-xl-2 font-semi-bold leading-tight",
+              "max-w-none text-right tracking-tight",
               "md:text-xl-3 lg:max-w-xl-2 xl:text-xl-4",
               "lg:text-center xl:max-w-xl-3"
             )}>

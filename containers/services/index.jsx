@@ -49,6 +49,7 @@ export default function Services() {
         variants={variants.container}
         initial={"hidden"}
         whileInView={"visible"}
+        viewport={{ once: true }}
         className={classes(
           "container mx-auto px-5 xl-2:max-w-xl-7",
           "flex flex-col items-start justify-start gap-0",
@@ -63,8 +64,8 @@ export default function Services() {
           <motion.h2
             variants={variants.item}
             className={classes(
-              "relative text-xl-2 font-semi-bold leading-tight",
-              "max-w-none text-justify capitalize tracking-tight",
+              "text-xl-2 font-semi-bold leading-tight",
+              "max-w-none text-right tracking-tight",
               "md:text-xl-3 lg:max-w-xl-2 xl:text-xl-4",
               "lg:text-center xl:max-w-xl-3"
             )}>

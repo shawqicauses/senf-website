@@ -23,6 +23,7 @@ export default function Navbar() {
         variants={variants.container}
         initial={"hidden"}
         whileInView={"visible"}
+        viewport={{ once: true }}
         className={classes(
           "container mx-auto px-5 xl:max-w-xl-7",
           "flex flex-row flex-wrap gap-5",
@@ -53,11 +54,11 @@ export default function Navbar() {
                   href={"#" + item.split(" ").join("-")}
                   className={classes(
                     "flex w-full flex-col items-center justify-center transition",
-                    "text-base font-medium leading-none",
+                    "text-base font-medium not-italic leading-none no-underline",
                     "rounded-lg border-2 border-slate-100 p-5 outline-none",
                     "no-underline hover:-translate-y-1 hover:text-red-500",
                     "text-slate-400 focus:translate-y-0.5 focus:text-white",
-                    "lg:w-max lg:border-0 lg:border-transparent"
+                    "lg:w-max lg:border-0 lg:border-transparent lg:text-lg"
                   )}>
                   {item}
                 </a>
