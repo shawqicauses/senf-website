@@ -15,9 +15,9 @@ export default function Header() {
       )}>
       <motion.div
         variants={variants.container}
+        viewport={{ once: true }}
         initial={"hidden"}
         whileInView={"visible"}
-        viewport={{ once: true }}
         className={classes(
           "container mx-auto h-full px-5 xl-2:max-w-xl-7",
           "flex flex-col items-start justify-start",

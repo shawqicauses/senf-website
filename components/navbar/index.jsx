@@ -21,9 +21,9 @@ export default function Navbar() {
       )}>
       <motion.div
         variants={variants.container}
+        viewport={{ once: true }}
         initial={"hidden"}
         whileInView={"visible"}
-        viewport={{ once: true }}
         className={classes(
           "container mx-auto px-5 xl:max-w-xl-7",
           "flex flex-row flex-wrap gap-5",

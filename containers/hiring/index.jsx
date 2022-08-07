@@ -1,44 +1,7 @@
 import { motion } from "framer-motion"
-import { classes } from "../../lib/utils"
+import { classes, variants } from "../../lib/utils"
 
 export default function Hiring() {
-  const variants = {
-    container: {
-      hidden: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: -1
-        }
-      },
-      visible: {
-        transition: {
-          delayChildren: 0,
-          staggerChildren: 0.0625,
-          staggerDirection: 1
-        }
-      }
-    },
-    item: {
-      hidden: {
-        y: 20,
-        opacity: 0,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      },
-      visible: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          stiffness: 100
-        }
-      }
-    }
-  }
-
   return (
     <section
       id="التقدم-لوظيفة"
@@ -48,6 +11,7 @@ export default function Hiring() {
       )}>
       <motion.div
         variants={variants.container}
+        viewport={{ once: true }}
         initial={"hidden"}
         whileInView={"visible"}
         className={classes(

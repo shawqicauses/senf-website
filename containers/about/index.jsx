@@ -13,9 +13,9 @@ export default function About() {
       )}>
       <motion.div
         variants={variants.container}
+        viewport={{ once: true }}
         initial={"hidden"}
         whileInView={"visible"}
-        viewport={{ once: true }}
         className={classes(
           "container mx-auto px-5 xl-2:max-w-xl-7",
           "flex flex-col items-start justify-start gap-10",
@@ -53,7 +53,7 @@ export default function About() {
               "text-justify text-slate-400 md:text-lg",
               "mt-auto ml-auto mb-4 lg:mb-6"
             )}>
-            شركة سنف للدعاية والإعلان فكر جديد ووجهة نظر جديدة في كل ما تحتاجه
+            شركة سِنف للدعاية والإعلان فكر جديد ووجهة نظر جديدة في كل ما تحتاجه
             من دعاية و إعلان بأيدي مجموعة ذوى قدرة عالية على الابتكار والإبــداع
             فنحن ننفذ كبرى الحملات الإعلانية المختلفة للشركات والمعارض فلدينا
             ستجد الهدف الرئيسي إرضـاء العـميل وليس الربح المادي ولذلك أسعارنا لا
@@ -65,7 +65,7 @@ export default function About() {
               "text-base font-normal leading-relaxed",
               "text-justify text-slate-400 md:text-lg"
             )}>
-            تسعى شركة سنف للدعاية والإعلان دائما لتحقيق سمعـة طيبـة وإرسـاء
+            تسعى شركة سِنف للدعاية والإعلان دائما لتحقيق سمعـة طيبـة وإرسـاء
             دعائم فكر وإبـداع من نـوع خـاص فنحن نعدكم بالدقة في الأداء والسرعة
             في إنهاء الأعمال وتقديم أداء راقي لا نسمـح بتقـديم أقـل منـه
           </motion.p>

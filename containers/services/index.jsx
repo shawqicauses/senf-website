@@ -29,11 +29,35 @@ export default function Services() {
       ].join(" ")
     },
     {
-      title: "تصميم الفيديوهات",
+      title: "مونتاج الفيديوهات",
       description: [
         "تقوم سِنف باختيار أفضل اللقطات التي تحاكي الفكرة الرئيسية وحذف اللقطات غير المرغوب بها",
         "واختيار أفضل المشاهد المناسبة للبداية والنهاية، والعمل على دمج بعض اللقطات",
         "لتصبح فكرة كاملة متناسقة تخلق مرونة للفكرة تماماً كما نعمل على التعديل الصوتي"
+      ].join(" ")
+    },
+    {
+      title: "التصميم الجرافيكي",
+      description: [
+        "في سِنف، نتخطى حدود قراءة أفكارك، نصل إلى جاذبية عملك، ونبني هويتك البصرية",
+        "بطريقة تعبر عنك، لن نقف فقط عند تصميم هويتك البصرية، نقوم أيضاً بعمل دراسة",
+        "شاملة لهويتك الحقيقة، لفهم أساليب تطبيقها على أرض الواقع بالطريقة الصحيحة"
+      ].join(" ")
+    },
+    {
+      title: "الاستشارات التجارية للمشاريع الناشئة",
+      description: [
+        "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص",
+        "من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى",
+        "إضافة إلى زيادة عدد الحروف التى يولدها التطبيق إذا كنت تحتاج إلى عدد أكبر من الفقرات"
+      ].join(" ")
+    },
+    {
+      title: "العلاقات العامة والاتصالات",
+      description: [
+        "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص",
+        "من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى",
+        "إضافة إلى زيادة عدد الحروف التى يولدها التطبيق إذا كنت تحتاج إلى عدد أكبر من الفقرات"
       ].join(" ")
     }
   ]
@@ -47,9 +71,9 @@ export default function Services() {
       )}>
       <motion.div
         variants={variants.container}
+        viewport={{ once: true }}
         initial={"hidden"}
         whileInView={"visible"}
-        viewport={{ once: true }}
         className={classes(
           "container mx-auto px-5 xl-2:max-w-xl-7",
           "flex flex-col items-start justify-start gap-0",
@@ -121,8 +145,8 @@ export default function Services() {
                 <dt>
                   <h3
                     className={classes(
-                      "text-lg font-semi-bold leading-none",
-                      "text-justify tracking-tight text-white",
+                      "truncate text-lg font-semi-bold leading-normal",
+                      "text-right tracking-tight text-white",
                       "mb-4 mt-auto max-w-xs md:text-xl"
                     )}>
                     {item.title}
